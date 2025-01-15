@@ -1,0 +1,299 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box; 
+}
+
+
+
+nav{
+  font-family: Le Murmure;
+  background-color: #9fb098ff;
+  height: 85px;
+  width: 100%;
+  margin:0;
+}
+
+label.logo{
+  color:white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold; 
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px; 
+}
+
+nav ul li{
+  /* ROW FORMAT HERE*/
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+
+nav ul li a{
+  color:white; 
+  font-size: 17px; 
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border-radius: 3px;
+  font-family: Le Murmure;
+  /* font-family: monospace; */
+  text-decoration: none;
+  list-style: none;
+}
+
+
+a.active, a:hover{
+  background: #B4CDCD;
+  /* background: #7fc3a5; */
+  text-color: white;
+  transition: .5s;
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+/* SO ANNOYING */
+#check{
+  display: none;
+ }
+
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  nav .checkbtn{
+    display:block;
+  }
+  nav ul{
+    position: fixed;    
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: 0;
+    text-align: center;
+  }
+  nav ul li{
+    display: block;
+  }
+  nav ul li a{
+    font-size: 20px;
+    font-family: monospace; 
+
+  }
+  nav ul li a:hover, nav ul li a.active{
+    background:none;
+    color: #0082e6; 
+  }
+  nav #check:checked ~ ul{
+    left:0;
+  }
+}
+
+/* STUFF AFTER NAV BAR */
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body{
+  background-color:#F4EBE9;
+}
+
+ 
+section{
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center;
+}
+
+ 
+.playlist{
+  display:flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
+} 
+
+/* LOFI PLAYLIST IS HERE */
+iframe{
+  width: 300%;
+  height: 152px;
+  
+  background: coral;
+  align-items: center; 
+  /* margin-left: 20px; */
+}
+
+h4{
+  font-size: 30px;
+  /* color: white; */
+}  
+
+/* THE DIV BOX for the STUDY Tips */
+
+.studyTips{
+  height: 400px;
+  width:600px;
+  background-color: white;
+  border: solid #9fb098ff 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 10px;
+  width: 600px;
+  margin: 0 auto; 
+} 
+.reasources ul{
+  display:flex; 
+  flex-direction: row; 
+  
+  
+  /* background-color: #89acb3ff; */
+  border-radius: 20px;
+  border: solid #9fb098ff 5px;
+}
+
+
+
+h1{
+  align-items: center;
+  color:white;
+  font-family:Passion One;
+  font-size:50px;
+    -webkit-text-stroke: 1px #9fb098; /* For Safari/Chrome/Opera */
+  text-stroke: 1px #9fb098; /* For other modern browsers */
+
+}
+
+.blurb{
+  border-radius: 10%; 
+  width: 35%;
+  height: 45%
+  background-color: white;
+  border: solid #9fb098ff 5px; 
+  padding: 10px;
+  border-radius: 10px;
+}
+
+
+center{
+  width: 100%;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+
+nav ul li a:hover {
+  color: white; /* Ensures text color remains white on hover */
+  background: #B4CDCD;
+  transition: .5s;
+}
+
+/* ADDED LIKE ACCORDIAN STARTS HERE */
+
+
+.reasources ul li{
+  margin-right: 20px;
+}
+
+.p-blurb{
+    text-align: center; 
+    width: 495px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.accHeader{
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+.accBlurb{
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 2%;
+    padding-bottom: 2%; 
+}
+
+.accordion {
+  /*Editing this  */
+    background-color: #9fb098ff;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 50%;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: 0.4s;
+    border: none;
+    border-radius: 3px;
+}
+
+.accordion:after {
+    /*  Plus*/
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.accordion.active:after {
+    /* Minus */
+    content: "\2212";
+}
+
+/* //STYLES THE INFO WITHIN ACCORDION */
+.panel {
+    padding: 0 18px;
+    background-color: #f4ebe9;
+    border-radius: 10px;
+    width: 50%; /* Set the desired width of the panel */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+/* Center the iframe container */
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px; /* Set the desired height of the container */
+}
+
+/* Set the size of the embedded Google Doc */
+.iframe-container iframe {
+    width: 80%; /* Set the desired width of the embedded document */  height: 400px;
+}
+

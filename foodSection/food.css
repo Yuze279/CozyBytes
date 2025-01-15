@@ -1,0 +1,327 @@
+ *{
+  text-decoration: none;
+  list-style: none;
+}
+
+
+body{ 
+  font-family: sono; 
+  margin: 0;
+  padding: 0;
+  background-color: #F4EBE9
+  
+}
+
+nav{
+  background-color: #9fb098ff;
+
+  /*aee0ae  */
+  height: 85px;
+  width: 100%;
+  margin:0;
+
+ 
+}
+
+label.logo{
+  color:white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold; 
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px; 
+}
+
+nav ul li{
+  /* ROW FORMAT HERE*/
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+
+nav ul li a{
+  color:white; 
+  font-size: 17px; 
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+
+
+a.active, a:hover{
+  background: #B4CDCD;
+  /* background: #7fc3a5; */
+  transition: .5s;
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+/* SO ANNOYING */
+#check{
+  display: none;
+ }
+
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+/* ... (previous CSS rules) ... */
+
+@media (max-width: 858px) {
+  /* Hide the banner and text inside the column nav bar */
+
+  
+  
+  /* Rest of the @media rules */
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: 0;
+    text-align: center;
+  }
+  nav ul li {
+    display: block;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover, a.active {
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+  .banner{
+    background-image: none;
+  }
+
+
+  .banner h2 {
+    display: none;
+  }
+}
+
+
+/* NAV BAR CSS ENDS HERE */
+
+body {
+  height: 100%;
+  width: 100%;
+  background: #F4EBE9;
+}
+
+.title {
+  display:flex;
+  justify-content:center;
+  
+  color:white;
+  font-family:Passion One;
+  font-size:50px;
+    -webkit-text-stroke: 1px #9fb098; /* For Safari/Chrome/Opera */
+  text-stroke: 1px #9fb098; /* For other modern browsers 
+/*  */
+}
+
+.borscht {
+  margin-top: 5%;
+  height: 60%;
+  width: 60%;
+  object-fit: cover;
+  margin-left: 20%;
+  display: flex;
+  flex-direction: center;
+} */
+
+/* .khichdi {
+  height: 10%;
+  width: 30%;
+  object-fit: cover;
+}
+
+.cns {
+  height: 10%;
+  width: 30%;
+  object-fit: cover;
+  margin-top: 10%;
+} */
+
+/* .firstBlock {
+  margin-top: -50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10%;
+} */
+
+.block1{
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10%;
+}
+
+.tostadas {
+  height: 25%;
+  width: 25%;
+  object-fit: cover;
+  margin-left: 10%;
+  margin-bottom: 8%;
+}
+
+.food {
+  display: flex;
+  flex-direction: column;
+}
+
+.katsudon {
+  height: 12%;
+  width: 50%;
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+.cake {
+  height: 12%;
+  width: 50%;
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+.burger {
+  height: 15%;
+  width: 50%;
+  object-fit: cover;
+  margin-bottom: -30%;
+}
+
+.secondBlock {
+  margin-top: 6%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 20%;
+  margin-bottom: -60%;
+}
+
+.pozole {
+  height: 32%;
+  width: 40%;
+  object-fit: cover;
+  margin-left: -20%;
+  margin-right: 10%;
+  margin-bottom: -20%;
+}
+
+.doughnuts {
+  /* margin-top: 10%; */
+  height: 80%;
+  width: 40%;
+  object-fit: cover;
+}
+
+.thirdBlock {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: -60%;
+}
+
+.curry {
+  height: 80%;
+  width: 40%;
+  object-fit: cover;
+}
+
+img {
+  margin: 4%;
+  border-radius: 12%;
+}
+
+.thirdBlock {
+  margin-top: 17%;
+  display: flex;
+  flex-direction
+  margin-bottom: -20%;
+}
+
+
+
+
+
+
+
+/*
+
+.FirstRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.SecondRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.imageGallery {
+  display: flex;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h1 {
+  text-align: center; 
+  background: #B4CDCD;
+  color: white;
+  font-size: 500%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+h3 {
+  background: #B4CDCD;
+  text-align: center;
+  color: white;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.textBox {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: -100%;
+}
+ */
+

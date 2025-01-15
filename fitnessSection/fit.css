@@ -1,0 +1,308 @@
+*{
+  /* height: 100%;
+  width: 100%; */
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box; 
+  scroll-behavior: smooth;
+
+}
+
+body{
+  font-family: sono; 
+  margin: 0;
+  padding: 0;
+  background-color: #F4EBE9;
+}
+
+nav{
+  background-color: #9fb098ff;
+
+  /*aee0ae  */
+  height: 85px;
+  width: 100%;
+  margin:0;
+}
+
+label.logo{
+  color:white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold; 
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px; 
+}
+
+nav ul li{
+  /* ROW FORMAT HERE*/
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+
+nav ul li a{
+  color:white; 
+  font-size: 17px; 
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+
+
+a.active, a:hover{
+  background: #B4CDCD;
+  /* background: #7fc3a5; */
+  transition: .5s;
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+/* SO ANNOYING */
+#check{
+  display: none;
+ }
+
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+/* ... (previous CSS rules) ... */
+
+@media (max-width: 858px) {
+  /* Hide the banner and text inside the column nav bar */
+
+  
+  
+  /* Rest of the @media rules */
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: 0;
+    text-align: center;
+  }
+  nav ul li {
+    display: block;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover, a.active {
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+  .banner{
+    background-image: none;
+  }
+
+
+  .banner h2 {
+    display: none;
+  }
+}
+/* NAV ENDS */
+
+
+
+h1{
+  color:white;
+  font-family:Passion One;
+  font-size:50px;
+    -webkit-text-stroke: 1px #9fb098; /* For Safari/Chrome/Opera */
+  text-stroke: 1px #9fb098; /* For other modern browsers */
+
+}
+
+
+
+h2{
+    color:white;
+  font-family:Passion One;
+  font-size:50px;
+    -webkit-text-stroke: 1px #9fb098; /* For Safari/Chrome/Opera */
+  text-stroke: 1px #9fb098; /* For other modern browsers */
+}
+
+body{
+ background-color: #F4EBE9;
+}
+img{
+  display: flex;
+  width: 4%;
+  height: 5%;
+}
+
+.horizontal-scroll-content{
+  width: 800px;
+  height: 300px;
+  overflow-x: auto;
+  border: 1px solid #ccc;
+  white-space: nowrap;
+  overflow-y:hidden;
+  overflow-x:auto;
+  
+}
+
+.blurb{
+  background-color: white;
+  border-radius: 10%;
+  width: 35%;
+  height: 45%
+  background-color: white;
+  border: solid #9fb098ff 5px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.tips{
+  background-color: #89acb3ff;
+  border-radius: 10%;
+  width: 35%;
+  height: 45%
+  background-color: white;
+  border: solid #9fb098ff 5px;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 800px;
+  max-height:400px;
+  margin: 0 auto; 
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.tips1{
+  padding-bottom: 5%;
+}
+h4{
+  padding-top: 5%;
+}
+
+
+ /* Styling for the horizontal scroll container */
+    .horizontal-scroll-container {
+      width: 400px;
+      height: 200px;
+      border: 1px solid #ccc;
+      overflow-x: auto; /* Enable horizontal scrolling */
+      white-space: nowrap; /* Prevent content from wrapping to new lines */
+      background-color: #9fb098ff; /* Set background color to #9fb098ff */
+      padding: 10px; /* Optional padding for better visual appearance */
+      border-radius: 15px; /* Add rounded corners */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a soft shadow effect */
+      animation: fadeIn 1s ease; /* Add a fade-in animation */
+    }
+
+    /* Optional: Styling for the content inside the horizontal container */
+    .horizontal-scroll-content {
+      display: inline-block; /* Display content in a single line */
+      color: white; /* Set font color to white for better contrast with the background */
+      font-size: 18px; /* Optional: Adjust font size as needed */
+      line-height: 1.6; /* Optional: Adjust line height as needed */
+   background-color: white;
+  border: solid #9fb098ff 5px;
+       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 800px;
+  max-height:400px;
+  margin: 0 auto; 
+  position: relative;
+    }
+
+    /* Optional: Fade-in animation keyframes */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="horizontal-scroll-container">
+    <div class="horizontal-scroll-content">
+      <!-- Content to be scrolled horizontally -->
+      <p>Item 1</p>
+      <p>Item 2</p>
+      <p>Item 3</p>
+      <p>Item 4</p>
+      <p>Item 5</p>
+      <p>Item 6</p>
+      <p>Item 7</p>
+      <!-- Add more items here if needed -->
+    </div>
+
+
+/* Styling for the cute div box */
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #e2f0e1; /* A light background color */
+}
+
+.cute-box {
+  background-color: #9fb098ff; /* Set background color to #9fb098ff */
+  color: white;
+  border:solid 5px white;
+  width: 300px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  font-size: 24px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin: 5px 0;
+  list-style-type: disc;
+}
+
+/* Add a cute hover effect */
+.cute-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
